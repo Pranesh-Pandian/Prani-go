@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+#lgmain{
+  height: 100vh;
+  width: 100%;
+  background-image: url(assets/Sky2.jpg);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.lgseg,.suseg,.aseg,.bseg{
+  height: 500px;
+  width: 500px;
+  background-image: linear-gradient(#ffffffc1,rgb(103, 169, 207));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;  
+}
+.lgseg form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bseg{width: 550px;}
+.aseg{
+  height:90%;
+  padding: 0 0 50px 0;
+}
+#logo{
+  height: 150px;
+  margin: 10px 0 0 0;
+}
+/* .sear{
+  margin: -10px 0 0 0 ;
+} */
+.lgseg h1,.suseg h1, .aseg h1,.bseg h1{
+  font-size: 40px;
+  margin: -20px 0 25px 0;
+}
+.lgseg input,.suseg input, .aseg input, .bseg input, .sear input{
+  border: 2px solid black;
+  font-size: 25px;
+  height: 40px;
+  margin: 0 0 5px 0;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-family: 'Poppins';
+}
+.bseg input{
+  width: 50%;
+}
+.sear input{
+  width: 20%;
+}
+.lgseg button,.bseg button{
+  margin: 20px 0 0 0;
+  height: 35px;
+  width: 80px;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgb(0, 119, 255);
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins';
+}
+.suseg button,.aseg button{
+  margin: 20px 0 0 0;
+  height: 35px;
+  width: 100px;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgb(0, 119, 255);
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins';
+}
+.lgseg button:hover,.suseg button:hover,.aseg button:hover,.bseg button:hover{
+  cursor: pointer;
+  box-shadow:0px 0px 10px rgb(0, 119, 255);
+}
+.lgseg p{
+  font-size: 20px;
+  font-family: 'Poppins';
+  margin: 10px 0 -10px 0 ;
+}
+
+.final{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./assets/Sky1.png);
+  background-size: cover;
+  position: fixed;
+  font-family: 'Poppins';
+}
+
+.final h1{
+  margin: 2vw 0 0 0;
+}
+
+.flightdisp{
+  height: 40%;
+  width: 80%;
+  background-color: rgb(219, 219, 219);
+  box-shadow: 2px 2px 5px black;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  gap: 10px;
+}
+.final #err{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.disp{
+  background-image: linear-gradient(#ffffffc1,rgb(103, 169, 207));
+  height: 90%;
+  width: 90%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 0 50px 0;
+  overflow: scroll;
+  /* position: fixed; */  
+}
+.disp::-webkit-scrollbar {
+  display: none;
+}
+.disp button{
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: rgb(0, 119, 255);
+  border-radius: 15px;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 20px;
+  text-decoration: none;
+}
+.disp button:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgb(0, 119, 255);
+}
+#add{
+  width: 150px;
+}
+#del{
+  background-color: rgb(235, 67, 67);
+  width: 95px;
+}
+#del:hover{
+  box-shadow: 0px 0px 10px rgb(235,67,67);
+}
+#book{
+  background-color: rgb(47, 247, 124);
+  color: black;
+  width: 150px;
+}
+#book:hover{
+  box-shadow: 0px 0px 10px rgb(11, 132, 57);
+}
+.comp{
+  font-family: 'kanit';
+  text-shadow: 2px 2px rgb(150, 149, 149);
+  font-weight: 900;
+}
+.bfin{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-image: url(./assets/Sky1.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bseg p,.sear label,.sear p{
+  font-size: 30px;
+  font-family: 'kanit';
+  text-shadow: 2px 2px rgb(150, 149, 149);
+  font-weight: 900;
+  margin: -5px 0 10px 0 ;
+}
+
+.sear{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
