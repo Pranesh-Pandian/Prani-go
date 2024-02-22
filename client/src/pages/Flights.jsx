@@ -19,7 +19,7 @@ const Flights = () => {
     useEffect(()=>{
         const fetchsearch=async()=>{
             try {
-                await axios.post("http://localhost:8800/home",search).then((res)=>{
+                await axios.post("https://prani-go.onrender.com/home",search).then((res)=>{
                     console.log(res)
                     // if(res.data.length===0) setErs(true);
                     // else setErs(false)  
@@ -63,7 +63,7 @@ const Flights = () => {
     useEffect(()=>{
         const fetchAllFlight=async()=>{
             try{
-                const res=await axios.get("http://localhost:8800/home")
+                const res=await axios.get("https://prani-go.onrender.com/home")
                 setFlight(res.data)
             }catch(err){
                 console.log(err)

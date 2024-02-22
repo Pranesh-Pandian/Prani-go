@@ -10,7 +10,7 @@ const Admindisp = () => {
     useEffect(()=>{
         const fetchAllFlight=async()=>{
             try{
-                const res=await axios.get("http://localhost:8800/adisp")
+                const res=await axios.get("https://prani-go.onrender.com/adisp")
                 setFlight(res.data)
             }catch(err){
                 console.log(err)
@@ -21,7 +21,7 @@ const Admindisp = () => {
 
     const handleDelete =async(id)=>{
         try {
-            await axios.delete("http://localhost:8800/adisp/"+id)
+            await axios.delete("https://prani-go.onrender.com/adisp/"+id)
             window.location.reload()
         } catch (err) {
             console.log(err)

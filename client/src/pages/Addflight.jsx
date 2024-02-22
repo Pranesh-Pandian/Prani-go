@@ -26,7 +26,7 @@ const AddFlight = () => {
     e.preventDefault()
     try {
         // console.log(flight.date);
-        await axios.post("http://localhost:8800/add",flight).then((res)=>{
+        await axios.post("https://prani-go.onrender.com/add",flight).then((res)=>{
           const resp=res.data.code
           if(res.data===1) alert("Enter Companyname!")
           else if(res.data===2) alert("Enter Departure Location")

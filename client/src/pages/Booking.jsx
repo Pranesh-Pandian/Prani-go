@@ -14,7 +14,7 @@ const Booking = () => {
     const fetchAllFlight=async()=>{
         try{
           // console.log(fId)
-            await axios.get("http://localhost:8800/book/"+fId).then((res)=>{
+            await axios.get("https://prani-go.onrender.com/book/"+fId).then((res)=>{
               // console.log(res.data[0]);
                 setFlight(res.data[0]);
               // console.log(flight)
@@ -30,7 +30,7 @@ const Booking = () => {
   const handleClick= async (e)=>{
     try{
       // console.log(fId);
-    await axios.post("http://localhost:8800/book/:id",{count:count,fID: fId} ).then((res)=>{
+    await axios.post("https://prani-go.onrender.com/book/:id",{count:count,fID: fId} ).then((res)=>{
       if(res.data===0) alert("Enter Valid Number of Seats!!")
       else if(res.data.affectedRows===0) alert("Choose Less Number of Seats!!")
       // console.log(res)

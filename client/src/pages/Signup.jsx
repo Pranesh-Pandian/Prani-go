@@ -21,7 +21,7 @@ const Signup = () => {
   const handleClick= async e =>{
     e.preventDefault()
     try {
-        await axios.post("http://localhost:8800/signup",detail).then((res)=>{
+        await axios.post("https://prani-go.onrender.com/signup",detail).then((res)=>{
           const resp=res.data.code
           if(res.data===1) alert("Enter Username!")
           else if(res.data===2) alert("Enter Email!")

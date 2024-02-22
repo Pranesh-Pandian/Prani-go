@@ -15,7 +15,7 @@ const Login = () => {
   };
   const handleClick= async e =>{
     try{
-      await axios.post("http://localhost:8800/",login).then((res)=>{
+      await axios.post("https://prani-go.onrender.com/",login).then((res)=>{
        if(res.data===1){
         alert("Logged In Successfully!!")
         navi("/home")
